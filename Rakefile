@@ -12,6 +12,14 @@ begin
   
   $: << File.expand_path('../../repo_page_san/lib', __FILE__)
   require 'repo_page_san'
+  require 'pp'
+  task :releasee do
+    pp T.gemspec
+    # r = RepoPageSan.new('alloy', T.gemspec)
+    # p r.index.path
+    # r.release!
+  end
+  
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
