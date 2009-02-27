@@ -4,12 +4,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
     s.name = "repo_page_san_test"
-    s.summary = %Q{TODO}
+    s.summary = s.description = %Q{A test repo to try out pages generation}
     s.email = "eloy.de.enige@gmail.com"
     s.homepage = "http://github.com/alloy/repo_page_san_test"
-    s.description = "TODO"
     s.authors = ["Eloy Duran"]
   end
+  
+  $: << File.expand_path('../../repo_page_san/lib', __FILE__)
+  require 'repo_page_san'
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
