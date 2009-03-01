@@ -12,10 +12,10 @@ begin
   
   begin
     require 'jewelry_portfolio/tasks'
+    JewelryPortfolio::Tasks.new
   rescue LoadError
     puts "JewelryPortfolio not available. Install it with: sudo gem install Fingertips-jewelry_portfolio -s http://gems.github.com"
   end
-  
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
