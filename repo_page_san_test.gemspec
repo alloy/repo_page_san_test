@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{repo_page_san_test}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eloy Duran"]
-  s.date = %q{2009-02-27}
+  s.date = %q{2009-03-01}
   s.description = %q{A test repo to try out pages generation}
   s.email = %q{eloy.de.enige@gmail.com}
   s.files = ["VERSION.yml", "lib/repo_page_san_test.rb", "test/repo_page_san_test_test.rb", "test/test_helper.rb"]
