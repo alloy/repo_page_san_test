@@ -10,14 +10,10 @@ begin
     s.authors = ["Eloy Duran"]
   end
   
-  $: << File.expand_path('../../repo_page_san/lib', __FILE__)
-  require 'repo_page_san'
-  require 'pp'
-  task :releasee do
-    pp T.gemspec
-    # r = RepoPageSan.new('alloy', T.gemspec)
-    # p r.index.path
-    # r.release!
+  begin
+    require 'jewelry_portfolio/tasks'
+  rescue LoadError
+    puts "JewelryPortfolio not available. Install it with: sudo gem install Fingertips-jewelry_portfolio -s http://gems.github.com"
   end
   
 rescue LoadError
